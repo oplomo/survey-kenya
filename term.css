@@ -1,0 +1,238 @@
+body {
+    background-image: url(gold.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    bowrder: 2px solid green;
+}
+
+.hold {
+    width: 60%;
+    height: fit-content;
+    background-image: url(silver.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 50px auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 20px;
+    /* background-color: gold; */
+    background-image: url(water.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+}
+
+.and {
+    text-align: center;
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 2.5em;
+    color: silver;
+    font-weight: 900;
+    font-family: 'Inconsolata', monospace;
+}
+
+.navi {
+    display: flex;
+    flex-basis: 48%;
+    justify-content: space-around;
+}
+
+.nv {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+    color: white;
+}
+
+.tplnk {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.trm {
+    color: black;
+}
+
+.pop {
+
+    /* background: conic-gradient(hsl(0, 0%, 75%), white 45deg, black 225deg, hsl(0, 0%, 75%)); */
+    background-image: url(garet.jpeg);
+    position: relative;
+    width: 40%;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    position: fixed;
+    z-index: 4;
+    padding: 15px;
+
+}
+
+.open {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+
+}
+
+
+.tt {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+
+}
+
+.ee {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    font-size: 1.4em;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    color: blue;
+    border: .3px black solid;
+}
+
+.la a {
+    display: block;
+    font-size: 2em;
+    color: chartreuse;
+    margin-bottom: 25px;
+    text-decoration: none;
+
+
+}
+
+.la {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.la a:hover {
+    letter-spacing: 1.3px;
+    text-decoration: underline;
+}
+
+* {
+    color: black;
+}
+
+.hdg {
+    font-weight: bold;
+}
+
+.ftr {
+    height: fit-content;
+    background-image: url(garet.jpeg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+
+@media screen and (max-width: 550px) {
+    body {}
+
+    .header {
+        flex-direction: column;
+    }
+
+    .pop {
+        width: 100%;
+    }
+
+    .ee {
+        right: 20px;
+    }
+
+    .ftr {
+        flex-direction: column;
+
+    }
+
+    .iconm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mdy {
+        text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 770px) and (min-width: 550.1px) {
+
+
+    body {}
+
+    .pop {}
+
+    .ftr {
+        flex-direction: column;
+
+    }
+
+    .iconm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mdy {
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 992px) and (min-width: 770.1px) {
+    body {}
+}
+
+
+
+@media screen and (max-width: 1199px) and (min-width: 992.1px) {
+    body {}
+}
+
+
+@media screen and (min-width: 1450px) {
+    body {}
+}

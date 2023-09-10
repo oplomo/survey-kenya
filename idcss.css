@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Inconsolata:wght@300;600&family=PT+Serif&family=Playfair+Display:ital,wght@1,500&family=Tektur:wght@900&display=swap');
+
+/* font-family: 'Handjet', cursive; */
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Playfair Display', serif; */
+/* font-family: 'PT Serif', serif; */
+/* font-family: 'Tektur', cursive; */
+
+body {
+    /* background-color: silver; */
+    background-image: url(water.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div {
+    /* border: 2px green solid; */
+}
+
+.nv {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: pointer;
+}
+
+.tplnk {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.outerl {
+    color: white;
+
+}
+
+.outerl:hover {
+    text-decoration: underline;
+    color: gold;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    /* background-color: gold; */
+    background-image: url(gold.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.and {
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Inconsolata', monospace;
+}
+
+.navi {
+    display: flex;
+    flex-basis: 48%;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.side {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.stps {
+    font-size: 1.6em;
+    font-weight: 800;
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'Handjet', cursive;
+
+}
+
+.ili {
+    display: inline;
+    border: 2px solid blue;
+    background-color: silver;
+    font-weight: 600;
+    color: black;
+
+
+}
+
+.img {
+    height: 75%;
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.mid {
+    flex-basis: 60%;
+}
+
+.test {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tm {
+    margin: 10px;
+}
+
+.ftr {
+    height: fit-content;
+    background-image: url(silver.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+
+
+.pop {
+
+    /* background: conic-gradient(hsl(0, 0%, 75%), white 45deg, black 225deg, hsl(0, 0%, 75%)); */
+    background-image: url(garet.jpeg);
+    position: relative;
+    width: 400px;
+    left: 50%;
+    top: 0;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    position: fixed;
+    z-index: 4;
+    padding: 15px;
+
+}
+
+.open {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+}
+
+
+.tt {
+    text-align: center;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: underline;
+
+}
+
+.ee {
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    font-size: 1.4em;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    color: blue;
+    border: .3px black solid;
+}
+
+.la a {
+    display: block;
+    font-size: 2em;
+    color: chartreuse;
+    margin-bottom: 25px;
+    text-decoration: none;
+
+
+}
+
+.la {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.la a:hover {
+    letter-spacing: 1.3px;
+    text-decoration: underline;
+}
+
+.say {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+
+.aqf {
+    margin-left: 30px;
+    width: 80%;
+    height: 45vh;
+}
+
+.mdy {
+    color: blue;
+}
+
+@media screen
+
+/*and (min-width: 291px)*/
+and (max-width: 550px) {
+    body {
+        /* background-image: url(diamondm.jpeg); */
+    }
+
+
+    .say {
+        font-size: small;
+    }
+
+    .img {
+        width: 100%;
+        height: 8%;
+    }
+
+    .aqf {
+        height: 20vh;
+    }
+
+
+    .side {
+        justify-content: space-between;
+    }
+
+    .header {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .ftr {
+        flex-direction: column;
+
+    }
+
+    .iconm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mdy {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 770px) and (min-width: 550.1px) {
+
+    body {}
+
+    .header {
+        flex-direction: column;
+    }
+
+    .say {
+        font-size: medium;
+    }
+
+    .aqf {
+        height: 150px;
+    }
+
+    .img {
+        width: 92.5%;
+        height: 12%;
+    }
+
+    .side {
+        justify-content: space-between;
+    }
+
+    .ftr {
+        flex-direction: column;
+
+    }
+
+    .iconm {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mdy {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 770.1px) {
+    body {
+        /* background-image: url(gold.jpeg); */
+    }
+
+    .say {
+        font-size: large;
+    }
+
+    .img {
+        width: 95%;
+        height: 15%;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992.1px) {
+    body {
+        /* background-image: url(silver.jpeg); */
+    }
+
+    .img {
+        width: 95%;
+        height: 16%;
+    }
+}
+
+
+@media screen and (min-width: 1450px) {
+    body {}
+}
